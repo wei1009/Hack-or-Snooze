@@ -1,0 +1,78 @@
+/* Lists of stories */
+
+.stories-list {
+  margin: 20px 5px;
+}
+
+.stories-list > li {
+  color: gray;
+  font-size: 0.8rem;
+  margin: 10px 0;
+}
+
+#favoriteStories {
+
+    padding-left: 15px;
+}
+
+#myStories {
+
+  padding-left: 15px;
+}
+
+#stories-loading-msg {
+  font-weight: bold;
+  font-size: 150%;
+  margin: 20px 30px;
+}
+
+
+/* Individual stories */
+
+.story-link {
+  color: black;
+  font-size: 0.85rem;
+  font-weight: normal;
+  margin: 18px 0;
+}
+
+.story-link:hover {
+  text-decoration: none;
+}
+
+.story-author {
+  margin-left: 2em;
+}
+
+.story-user {
+  display: block;
+}
+
+
+.delete,
+.star {
+  font-size: 0.75rem;
+  margin: 0 2px;
+  cursor: pointer;
+}
+
+
+
+.delete:hover {
+  color:red;
+}
+
+.star[isFavorite=false]:before {
+  content: "\2606";
+  font-size: 1.2rem;
+}
+
+.star[isFavorite=true]:before {
+  content: "\2605";
+  font-size: 1.2rem;
+}
+
+.trashCan:before {
+  content: "\01F5D1";
+  font-size: 1.2rem;
+}
